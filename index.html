@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Flexbox на практике</title>
+		<meta charset="utf-8">
+		<style>
+			body{
+				background: #fefefe;
+				margin: 0;
+				padding: 0;
+				font:1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+				color: #272727;
+			}
+			img{
+				margin: 0;
+				padding: 0;
+				vertical-align: middle;
+				border: none;
+			}
+			.main{
+				margin: 20px;
+				border: 1px solid #ccc;
+				padding: 20px;
+				background: #fff;
+				border-radius: 3px;
+			}
+			.bl{
+				padding: 5px 10px;
+				border:1px solid #ddd;
+				background: #fffde1;
+				border-radius: 3px;
+				margin: 20px;
+			}
+
+			.main{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: center;
+				align-items: stretch;
+				align-content: stretch;
+				flex-flow:row wrap;
+
+				max-width: 1000px;
+			}
+			.bl{
+				flex:1 1 200px; text-align: center;
+			}
+			.fl1{background-color: gold;order:5;flex-basis:300px;}
+			.fl2{background-color: silver;order:3; flex-basis:150px;}
+			.fl3{background-color: pink;order:1;flex-basis:100%;}
+			.fl4{background-color: aqua; order:0; flex-basis:100%;}
+			.fl5{background-color: violet;order:6;flex-basis:300px;}
+			.fl6{ order:4; flex-basis:400px; flex-grow: 3;}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="main">
+			<div class="bl fl1">ПОДВАЛ <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet amet dolor delectus velit, asperiores atque perspiciatis sequi dignissimos nesciunt assumenda.</div>
+			<div class="bl fl2">ЛЕВЫЙ САЙДБАР <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit blanditiis iusto debitis repellat modi vero nam odio maiores voluptatibus.</div>
+			<div class="bl fl3">МЕНЮ <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellendus atque commodi quam. Deserunt voluptatem, cum molestiae minima optio natus.</div>
+			<div class="bl fl4">ШАПКА <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nihil iusto deserunt tenetur incidunt cum, nobis quis porro. Porro, repudiandae.</div>
+			<div class="bl fl5">ПОДВАЛ 2 <br> 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium illum aliquam fugit ea rerum amet repellat odio culpa autem quas.</div>
+			<div class="bl fl6">КОНТЕНТ <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi officia totam provident earum reprehenderit fugit fuga doloremque quam placeat necessitatibus.</div>
+		</div>
+
+	</body>
+</html>
